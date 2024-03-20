@@ -5,7 +5,7 @@ const app = express()
 app.get("/*", (req, res, next) => {
 const pathSegments = req.path.split('/');
 const rocketPath = pathSegments[2]
-  https.request(new URL("https://krunker.io/" + req.path), (resp) => {
+  https.request(new URL("https://ruby.rubynetwork.co/" + req.path), (resp) => {
     res.contentType(resp.headers["content-type"])
     resp.pipe(res)
   }).end()
