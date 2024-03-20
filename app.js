@@ -3,7 +3,7 @@ const https = require("https");
 const app = express();
 
 app.get("/*", (req, res, next) => {
-  const targetUrl = new URL("https://krunker.io/" + req.path);
+  const targetUrl = new URL("https://ruby.rubynetwork.co/" + req.path);
   
   // Make a request to the target URL
   https.request(targetUrl, (resp) => {
